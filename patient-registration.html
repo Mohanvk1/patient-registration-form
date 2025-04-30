@@ -1,0 +1,99 @@
+<html>
+   <head>
+    <title>patientregistrarion</title>
+    <link rel="stylesheet" href="Patient.CSS">
+   </head> 
+   <body>
+    <form>
+    <p class="registration-form">patient registrarion form</p>
+    <p style="text-align:center;">Thank you for applying to our practices. Please complete this patient registration form with your information, and a doctor will contact you shortly.</p><hr>
+    
+    
+    <div class="name">
+        <label for="firstName">Patient's Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="firstName" required>
+        <input type="text" id="lastName" name="lastName" placeholder="lastName" required><br>
+
+    </div>
+
+   <div class="Gender"><label> Gender</label>
+    
+    <input type="radio" id="male" name="Gender" value="male">
+    <label>male</label>
+    <input type="radio" id="female"  name="Gender" value="female">
+    <label>female</label>
+    <br>
+    </div>
+    <div class="phone"><label>phone</label>
+    <input type="tel" id="phone" >
+    <br>
+    </div>
+    <div class="dob"><label>Date of Birth</label>
+    <input type="date" id="dob" name="dob">
+    <br>
+    </div>
+    <div class="marital-status"><label>marital status</label>
+    <input type="checkbox" id="single" name="single">
+    <label>single</label>
+    <input type="checkbox" id="married" name="married">
+    <label>married</label>
+    <input type="checkbox" id="Divorced" name="Divorced">
+    <label>Divorced</label>
+    <input type="checkbox" id="Widow" name="Widow">
+    <label>Widow</label>
+    <br>
+    </div>
+    <div class="Address">
+        <label for="street">Patient's Address:</label>
+        
+        <input type="text" id="street" name="street " placeholder="steert Address"  required ><br><br>
+        
+        <input type="text" id="city" name="city" placeholder="city" required>   <input type="text"  id="state" name="state" placeholder="state"><br><br>
+        
+        <input type="text"  id="zipcode" name="zipcode" placeholder="zipcode">
+        
+     <select id="country" name="country" placeholder="country">
+        <option value="">country </option>
+        <option value="us">united states</option>
+        <option value ="ind">india</option>
+        <option value="aus">austriila</option></select><br>
+
+        
+    </div>
+    
+    <div class="Insurance"> <label>Insurance Name</label>
+        <input type="text" id="InsuranceName" name="Insurance Name"><br>
+    </div>
+    <label>Past Medical History</label>
+<div class="checkbox-group">
+    <label for="anemia"><input type="checkbox" id="anemia" name="past_medical_history" value="Anemia"> Anemia</label><br>
+    <label for="asthma"><input type="checkbox" id="asthma" name="past_medical_history" value="Asthma"> Asthma</label><br>
+    <label for="bronchitis"><input type="checkbox" id="bronchitis" name="past_medical_history" value="Bronchitis"> Bronchitis</label><br>
+    <label for="chickenpox"><input type="checkbox" id="chickenpox" name="past_medical_history" value="Chickenpox"> Chickenpox</label><br>
+    <label for="diabetes"><input type="checkbox" id="diabetes" name="past_medical_history" value="Diabetes"> Diabetes</label><br>
+    <label for="pneumonia"><input type="checkbox" id="pneumonia" name="past_medical_history" value="Pneumonia"> Pneumonia</label><br>
+    <label for="thyroid"><input type="checkbox" id="thyroid" name="past_medical_history" value="Thyroid Disease"> Thyroid Disease</label><br>
+    <label for="ulcer"><input type="checkbox" id="ulcer" name="past_medical_history" value="Ulcer"> Ulcer</label><br>
+    <label for="other"><input type="checkbox" id="other" name="past_medical_history" value="Other"> Other:</label>
+    <input type="text" id="other_detail" name="other_detail" placeholder="Please specify"><br>
+</div>
+            <h4>Patient/Guardian Signature</h4>
+            <p>According to our privacy policy and federal law, your information within this patient registration form will remain private at all time.</p>
+            <action>
+                
+                <button type="submit">Register Now</button>
+            </action>
+            
+            
+
+
+
+
+
+
+   </form>
+   </body>
+    
+   
+
+</html>
