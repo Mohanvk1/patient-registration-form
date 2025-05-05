@@ -7,58 +7,31 @@ align-items: center;
 justify-content: center;
 
 }
-
-form{
-  background-color: aliceblue;
-box-sizing: border-box;
-font-family: "Inter", sans-serif;
-display: flex;
-flex-direction: column;
-padding: 20px;
-width: 75%;
-gap: 10px;
-align-items: center;
-display: inline-block;
-
+form {
+  background-color: hsl(0, 22%, 96%);
+  box-sizing: border-box;
+  font-family: 'Raleway';
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 75%;
+  gap: 10px;
+  align-items: center;
+  display: inline-block;
 }
 
-
-.registration-form{
-  font-family: ralewy;
-  font-size: 40px;
-}
-
-#firstName,
-#lastName,
-#male,
-#female,
-#phone,
-#dob,
-#single,
-#married,
-#Divorced,
-#Widow,
-#street,
-#city,
-#zipcode,
-#country,
-#state,
-#InsuranceName
-
-{
-  
-  color: f0f0f0;
-  padding: 20x ;
-  text-align: center;
-  border-width: 1px !important;
-  border-style: solid !important;
-  border-radius: 6px !important;
-  font-family: Raleway;
+.button {
+  background-color: #000;      
+  color: #fff;                
+  padding: 10px 50px;
+  width: 600px;                
+  max-width: 100%;             
+  border: none;
+  border-radius: 5px;
   font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.2em;
-  background-color: rgba(0, 0, 0, .15);
-  border-color: transparent;
+  cursor: pointer;
+  display: block;             
+  margin: 0 auto;
 }
 
