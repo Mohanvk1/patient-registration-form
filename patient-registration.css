@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 body {
   background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287');
-background-color: lightblue;
+background-color: ;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+font-family:'raleway';
+font-weight: 100;
+color: #2a2a2a;
 
 }
 form {
@@ -23,7 +28,7 @@ form {
 
 .button {
   background-color: #000;      
-  color: #fff;                
+  color: #f9f4f4;                
   padding: 10px 50px;
   width: 600px;                
   max-width: 100%;             
@@ -33,5 +38,129 @@ form {
   cursor: pointer;
   display: block;             
   margin: 0 auto;
+}
+.form-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+}
+.input-group {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 70%;
+}
+
+.input-group input {
+  flex: 1;
+  text-align: left;
+}
+#firstName,
+#lastName,
+#country
+
+
+
+{
+  color: #070606;
+    padding: 15px 15px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-radius: 6px !important;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2em;
+    background-color: rgba(0, 0, 0, .15);
+    border-color: transparent;
+}
+.registration-form{
+  font-family: raleway;
+  font-size: 40px;
+}
+#phonenumber {
+  
+  color: #070606;
+  padding: 15px 15px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 6px !important;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  background-color: rgba(0, 0, 0, .15);
+  border-color: transparent;
+}
+#dob {
+  width: 100%;
+  color: #070606;
+  padding: 15px 15px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 6px !important;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  background-color: rgba(0, 0, 0, .15);
+  border-color: transparent;
+  font-weight: normal;
+}
+#InsuranceName{
+  width: 280px;
+  color: #070606;
+  padding: 15px 15px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 6px !important;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  background-color: rgba(0, 0, 0, .15);
+  border-color: transparent;
+}
+
+
+#city,
+#state,
+#zipcode,
+#country,
+#street
+{
+  display: flex;
+  flex-direction: column;
+   color: #070606;
+    padding: 15px 15px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-radius: 6px !important;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2em;
+    background-color: rgba(0, 0, 0, .15);
+    border-color: transparent;
+   
+    
+}
+.input-group.Address{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 70%;
+  justify-content: flex-end;
+}
+
+.input-group.radio{
+  display: flex;
+  align-items: center;
+  margin-right: 20px; 
+  width: auto;        
+  padding: 6px;
+  
 }
 
