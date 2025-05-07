@@ -1,181 +1,118 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>patientregistration</title>
+    <title>Patient Registration Form</title>
     <link rel="stylesheet" href="patient-registration.css">
-    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap')">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <form class="container">
-        <p class="registration-form">patient registration form</p>
-        <p style="text-align:center;">Thank you for applying to our practices. Please complete this patient registration
-            form with your information, and a doctor will contact you shortly.</p>
+        <h1>Patient Registration Form</h1>
+        <p>Thank you for applying to our practice. Please complete this patient registration form with your information,
+            and a doctor will contact you shortly.</p>
         <hr>
 
-
-        <div class="form-row name">
-            <label for="firstName">Patient's Name:</label>
+        <div class="form-row">
+            <label for="fname">Patient's Name*</label>
             <div class="input-group">
-                <input type="text" id="firstName" name="firstName" placeholder="First" required>
-                <input type="text" id="lastName" name="lastName" placeholder="last" required><br>
+                <input type="text" id="fname" name="first" placeholder="FirstName" required>
+                <input type="text" id="lname" name="last" placeholder="LastName" required>
             </div>
         </div>
 
-        <div class=" form-row Gender">
-            <label> Gender</label>
-            <div class="input-group radio">
-                <div class="radio-Button">
-                    <input type="radio" id="male" name="Gender" value="male">
-                    <label>Male</label>
-                </div>
-                <div class="radio-Button">
-                    <input type="radio" id="female" name="Gender" value="female">
-                    <label>Female</label>
-                    <br>
-                </div>
+        <div class="form-row">
+            <label>Gender</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+        </div>
 
-        </div>
-        </div>
-        <div class="form-row phone">
-            <label>phonenumber</label>
+        <div class="form-row">
+            <label for="Phone">Phone*</label>
             <div class="input-group">
-                <div class="half-width">
-                <input type="text" id="phonenumber" placeholder="### ### ####">
-                <br>
-            </div>
+                <input type="tel" id="Phone" name="Phone" placeholder="### ### ####" required>
             </div>
         </div>
-        <div class="form-row dob"><label>Date of Birth</label>
+
+        <div class="form-row">
+            <label for="DOB">Date of Birth*</label>
             <div class="input-group">
-                <div class="half-width">
-                <input type="date" class="dateofbirth" id="dob" name="dob">
-                <br>
-                </div>
+                <input type="date" class="dateofbirth" id="DOB" name="dob" placeholder="MM/DD/YYYY" required>
             </div>
         </div>
-        <div class="form-row marital-status">
-            <label>marital status</label>
 
-            <div class="input-group radio">
-                <div class="radio-Button">      
-                    <input type="radio" id="single" name="marital status">
-                    <label>single</label>
-                </div>
-                <div class="radio-Button">
-                    <input type="radio" id="married" name="marital status">
-                    <label>married</label>
-                </div>
-                <div class="radio-Button">
-                    <input type="radio" id="Divorced" name="marital status">
-                    <label>Divorced</label>
-                </div>
-                <div class="radio-Button">
-                    <input type="radio" id="Widow" name="marital status">
-                    <label>Widow</label>
-                    <br>
-                </div>
+        <div class="form-row">
+            <label>Marital Status*</label>
+            <div class="status">
+                <label><input type="radio" name="MStatus" value="Single" required> Single</label>
+                <label><input type="radio" name="MStatus" value="Married"> Married</label>
+                <label><input type="radio" name="MStatus" value="Divorced"> Divorced</label>
+                <label><input type="radio" name="MStatus" value="Widow"> Widow</label>
             </div>
         </div>
-        
-        <div class="PatientAddress form-row">
-            <div class="PatientAddress-label">
-                <label for="PAddress" class="PatientAddresslbl">Patient's Address* </label>
-            </div>
-            <div class="input-group address">
-                <div class="address-field-input">
-                    <input type="text" class="street_address" id="PAddress" name="Street Address"
-                        placeholder="Street Address"><br><br>
-                </div>
-                <div>
-                        <input type="text" class="city_address" id="PAddress_City" name="City" placeholder="City">
-                        <input type="text" class="state_addresss" id="PAddress_State" name="State" placeholder="State"><br><br>
-                </div>
-                <div class="address-field-input">
-                        <input type="text" class="zip_address" id="PAddress_zip" name="Zip" placeholder="Postal/Zip Code">
-                        <div class="address-field-input">
-                        <select id="country" class="Country_dropdown" name="country">
-                            <option value="">Country</option>
-                            <option value="us">United States</option>
-                            <option value="ca">Canada</option>
-                            <option value="uk">United Kingdom</option>
-                            <option value="au">Australia</option>
-                            <option value="in">India</option>
-                            <option value="de">Germany</option>
-                            <option value="fr">France</option>
-                        </select>
-                </div>
-            </div>
-        </div>
-    </div>
 
-        <div class="form-row Insurance"> <label>Insurance Name</label>
+        <div class="form-row-address">
+            <label for="PAddress">Patient's Address*</label>
+            <div class="address">
+                <input type="text" class="Street-Address" id="Address" name="street_address"
+                    placeholder="Street Address" required>
+
+                <div class="input-group">
+                    <input type="text" class="city-address" name="city" placeholder="City" required>
+                    <input type="text" class="state-address" name="state" placeholder="State" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="zip-address" name="zip" placeholder="Postal/Zip Code" required>
+                    <select class="country-dropdown" name="country" required>
+                        <option value="">Country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                        <option value="in">India</option>
+                        <option value="de">Germany</option>
+                        <option value="fr">France</option>
+                        <option value="jp">Japan</option>
+                        <option value="cn">China</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label for="Iname">Insurance Name*</label>
             <div class="input-group">
-                <div class="half-width">
-                <input type="text" id="InsuranceName" name="Insurance Name"><br>
-            </div>
-            </div>
-        </div>
-        <div    class="PatientMedicalHistory form-row">
-            <div class="medical-history-label">
-                <label for="Past medical history" class="PatientMedicalHistoryllb">Past medical history*</label><br><br>
-            </div>
-            <div class="input-group check-box">
-                <div class="medical-history">
-                    <input type="checkbox" id="Anemia" name="medical_history" value="Anemia"><label for="Anemia">
-                        Anemia</label><br>
-                </div>
-                <div class="medical-history">
-                    <input type="checkbox" id="Asthma" name="medical_history" value="Asthma"><label for="Asthma">
-                        Asthma</label><br>
-                </div>
-                <div class="medical-history">
-                    <input type="checkbox" id="Bronchitis" name="medical_history" value="Bronchitis"><label for="Bronchitis">
-                        Bronchitis</label><br>
-                </div>
-                <div class="medical-history">
-                    <input type="checkbox" id="Chickenpox" name="medical_history" value="Chickenpox"><label for="Chickenpox">
-                        Chickenpox</label>
-                </div>
-                <div class="medical-history">
-                    <input type="checkbox" id="Diabetes" name="medical_history" value="Diabetes"><label for="Diabetes">
-                        Diabetes</label>
-                </div>
-                <div class="medical-history">
-                    <input type="checkbox" id="Pneumonia" name="medical_history" value="Pneumonia"><label for="Pneumonia">
-                        Pneumonia</label>
-                </div>
-                <div class="medical-history">
-                    <input type="checkbox" id="Thyroid" name="medical_history" value="Thyroid Disease"><label for="Thyroid">
-                        Thyroid Disease</label>
-                </div>
-                <div class="medical-history">
-                    <input type="checkbox" id="Ulcer" name="medical_history" value="Ulcer"><label for="Ulcer"> Ulcer</label>
-                </div>
-                <div class="medical-history">
-                    <input type="checkbox" id="Other" name="medical_history" value="Other"><label for="Other"> Other :</label>
-                </div>
+                <input type="text" id="Iname" name="insurance_name" required>
             </div>
         </div>
 
-            <h4>Patient/Guardian Signature</h4>
-            <p>According to our privacy policy and federal law, your information within this patient registration
-                form will remain private at all time.</p>
-            <action>
+        <div class="form-row-medical">
+            <label>Past Medical History*</label>
+            <div class="medical">
+                <label><input type="checkbox" name="medical_history" value="Anemia"> Anemia</label>
+                <label><input type="checkbox" name="medical_history" value="Asthma"> Asthma</label>
+                <label><input type="checkbox" name="medical_history" value="Bronchitis"> Bronchitis</label>
+                <label><input type="checkbox" name="medical_history" value="Chickenpox"> Chickenpox</label>
+                <label><input type="checkbox" name="medical_history" value="Diabetes"> Diabetes</label>
+                <label><input type="checkbox" name="medical_history" value="Pneumonia"> Pneumonia</label>
+                <label><input type="checkbox" name="medical_history" value="Thyroid Disease"> Thyroid Disease</label>
+                <label><input type="checkbox" name="medical_history" value="Ulcer"> Ulcer</label>
+                <label><input type="checkbox" name="medical_history" value="Other"> Other</label>
+            </div>
+        </div>
 
-                <button type="submit" class="button">Register Now</button>
-            </action>
+        <h2>Patient/Guardian Signature*</h2>
+        <p>According to our privacy policy and federal law, your information within this patient registration form will
+            remain private at all times.</p>
 
-
-
-
-
-
-
-
+        <div class="Register-Button">
+            <button type="submit" class="button">REGISTER</button>
+        </div>
     </form>
 </body>
-
-
 
 </html>
